@@ -1,6 +1,6 @@
 # Change Log
 
-## [v0.5](https://github.com/skeyelab/Zendesk_Active_Sessions/tree/v0.5) (2015-03-18)
+## [v0.5](https://github.com/Skeyelab/Zendesk_Active_Sessions/tree/v0.5) (2015-03-18)
 
 
 
