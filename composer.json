@@ -1,0 +1,7 @@
+{
+    "require": {
+        "nategood/httpful": "*",
+        "zendesk/zendesk_api_client_php": "dev-master",
+        "wp-cli/php-cli-tools": "dev-master"
+    }
+}
