@@ -13,10 +13,7 @@ $token     = $_ENV['ZD_TOKEN']; // replace this with your token
 $client = new ZendeskAPI($subdomain, $username);
 $client->setAuth('token', $token); // set either token or password
 
-
-
 $uri = "https://$subdomain.zendesk.com/api/v2/sessions.json";
-
 
 $sessions = [];
 
@@ -27,7 +24,6 @@ do{
 
     $user = $client->users()->find(["id"=>$session->user_id]);
     $session->user_role = $user->user->role;
-
 
     if ($session->user_role == "end-user"){
 
@@ -45,6 +41,7 @@ do{
 
   $uri = $response->body->next_page;
 }while($response->body->next_page != null);
+
 echo PHP_EOL;
 
 $table = new \cli\Table();
